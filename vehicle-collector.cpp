@@ -2,10 +2,10 @@
 
 inventory telematic_to_inventory(telematics vehi_tele)
 {
-  inventory vehi_invt;
+  inventory vehi_invt, *temp ;
   
   vehi_invt.vehicle_id = vehi_tele.vehicle_id ; 
-  vehi_invt.type = vehi_tele.measurement;
+  temp -> (vehi_tele.type) = vehi_tele.measurement;
   #if 0
   switch(vehi_tele.type)
   {
