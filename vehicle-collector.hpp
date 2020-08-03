@@ -5,16 +5,17 @@ enum measure
   battery_temp,
 };
 
-struct telematics
+typedef struct 
 {
   int vehicle_id;
   measure type;
   float measurement;
-};
-struct inventory 
+}telematics;
+
+typedef struct  
 {
   int vehicle_id;
   float motor_temp;
   float battery_pc;
   float battery_temp;
-};
+}inventory;
