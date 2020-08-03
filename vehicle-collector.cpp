@@ -5,8 +5,7 @@ inventory telematic_to_inventory(telematics vehi_tele)
   inventory vehi_invt, *temp ;
   
   vehi_invt.vehicle_id = vehi_tele.vehicle_id ; 
-  temp -> (vehi_tele.type) = vehi_tele.measurement;
-  #if 0
+
   switch(vehi_tele.type)
   {
     case motor_temp:
@@ -19,6 +18,6 @@ inventory telematic_to_inventory(telematics vehi_tele)
                     vehi_invt.battery_temp = vehi_tele.measurement;
                     break;
   }
-  #endif 
+ 
   return vehi_invt; 
 }
