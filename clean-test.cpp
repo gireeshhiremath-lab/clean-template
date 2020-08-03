@@ -1,9 +1,10 @@
 #include <vehicle-collector.hpp>
 #include <gtest/gtest.h>
- TEST(COLLECT,when_vehicle_report_a_measurement_it_is_featched_and_stored_with_vehicle_id)
+ TEST(COLLECT, when_vehicle_report_a_measurement_it_is_featched_and_stored_with_vehicle_id)
  {
-  inventory i = telematic_to_inventory(telematics);
-  ASSERT_EQ(i,30);
+  telematics vehi_tele = {121, motor_temp, 25};
+  inventory vehi_invt = telematic_to_inventory(telematics);
+  ASSERT_EQ(vehi_invt.motor_temp, 25);
  }
  
 int main(int argc, char **argv) {
