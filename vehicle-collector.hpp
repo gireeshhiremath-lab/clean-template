@@ -19,3 +19,5 @@ typedef struct
   float battery_pc;
   float battery_temp;
 }inventory;
+
+inventory telematic_to_inventory(telematics vehi_tele)
