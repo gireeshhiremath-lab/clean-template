@@ -3,7 +3,7 @@
 inventory vehicle_data_base[] ={/* vehicle_id motor_temp battery_pc battery_temp*/
                                         {   120,          25,         23.5,     24.3      },
                                         {   121,          26,         24.5,     27.3      },
-}
+};
 
 inventory telematic_to_inventory(telematics vehi_tele)
 {
